@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: RESTful_app/view  # Указываем путь к фронтенду
+        working-directory: view  # Указываем путь к фронтенду
     
     steps:
       - name: Checkout code
@@ -28,7 +28,7 @@ jobs:
         with:
           path: |
             RESTful_app/view/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('RESTful_app/view/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('view/package-lock.json') }}
           
       - name: Install dependencies
         run: npm ci
@@ -58,7 +58,7 @@ jobs:
         with:
           path: |
             RESTful_app/view/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('RESTful_app/view/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('view/package-lock.json') }}
           
       - name: Install dependencies
         run: npm ci
