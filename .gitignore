@@ -3,4 +3,5 @@ api/.venv
 api/.vscode
 view/.vscode
 view/node_modules
+view/dist
 view/package-lock.json

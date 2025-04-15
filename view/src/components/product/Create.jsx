@@ -12,6 +12,7 @@ export default function ProductCreate(props) {
       props.history.push('/product')
     }).catch((e) => {
       alert(e.response.data)
+      //alert(e.response?.data || 'Unknown error occurred')
     })
   }
 
