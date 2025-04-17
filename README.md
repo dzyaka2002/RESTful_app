@@ -1,6 +1,6 @@
 # Установка #
 
-1. Необходимо скопировать репозиторий ```git clone https://github.com/stackpuz/Example-CRUD-React-18-FastAPI```
+1. Необходимо скопировать репозиторий через ```git clone```
 2. Требуется установить Node.js не ниже 18 версии (лучше это сделать через nvm):
    ```apt install curl
    curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
